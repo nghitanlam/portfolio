@@ -57,8 +57,8 @@ const Intro = (props) => {
 
             <HStack>
                 <IconButton icon={<SiReaddotcv />} />
-                <Link href="https://github.com/nghitanlam" isExternal>
-                    https://github.com/nghitanlam
+                <Link href="https://drive.google.com/file/d/1N7y1f5mGvznfXUNQvGOXbXEBxLTbo01v/view?usp=sharing" isExternal>
+                    https://drive.google.com/file/d/1N7y1f5mGvznfXUNQvGOXbXEBxLTbo01v/view?usp=sharing
                 </Link>
             </HStack>
         </VStack>
