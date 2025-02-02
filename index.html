@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/assets/p-icon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <title>Portfo</title>
+  </head>
+
+  <body>
+    <nav>
+      <div class="logo">
+        <i class="fas fa-code"></i>
+      </div>
+      <div class="links">
+        <a href="#">About</a>
+        <a href="#project">Project</a>
+      </div>
+    </nav>
+
+    <div class="about">
+      <div class="left">
+        <h3>Frontend Developer</h3>
+        <div class="info">
+          <h2>I'm Lam Tan Nghi (Nolan)</h2>
+          <p>
+            As an Information Technology graduate with a strong foundation in
+            web development, I have more than 6 months of experience working as
+            a web developer, where I contributed to designing and developing web
+            applications.
+          </p>
+          <div class="buttons">
+            <!-- <button class="hire">
+              <a href="https://google.com" target="_blank">Download My CV</a>
+              <i class="fas fa-download"></i>
+            </button> -->
+            <button onclick="copyContent()" class="email">
+              <span>Copy Email</span>
+              <span class="hidden" id="email">nghi.tanlam@gmail.com</span>
+              <i class="far fa-copy"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <a class="online" href="#"
+          ><i class="fas fa-circle"></i> Available For Job</a
+        >
+        <img src="assets/avatar.jpg" />
+      </div>
+    </div>
+
+    <div class="works">
+      <div class="left">
+        <h3><i class="fas fa-circle"></i> Recent Works</h3>
+        <div class="works-list">
+          <div class="item">
+            <div class="work-info">
+              <h5 class="active">Car Rental Website Manager</h5>
+              <p>07/2024 - Present</p>
+            </div>
+            <p>Cam Van Travel</p>
+          </div>
+          <div class="item">
+            <div class="work-info">
+              <h5 class="active">Frontend Developer</h5>
+              <p>03/2024 - 07/2024</p>
+            </div>
+            <p>Innorix VietNam</p>
+          </div>
+          <div class="item">
+            <div class="work-info">
+              <h5 class="active">Frontend Developer Intern</h5>
+              <p>05/2023 - 01/2024</p>
+            </div>
+            <p>Hiptech Solution</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="item">
+          <a href="#">Skill</a>
+          <p>
+            As a web developer, my skills are mainly focused on the frontend. My
+            goal is to develop websites that perform well, look good, and are
+            suitable for all devices.
+          </p>
+        </div>
+        <div class="item">
+          <a href="#">Programming Languages</a>
+          <p>C#, JavaScript, Java</p>
+        </div>
+        <div class="item">
+          <a href="#">Web Frameworks</a>
+          <p>.NET, ReactJs, NodeJs, Bootstrap, Tailwind CSS</p>
+        </div>
+        <div class="item">
+          <a href="#">Database</a>
+          <p>MongoDB, MySQL, SQLServer</p>
+        </div>
+        <div class="item">
+          <a href="#">Other</a>
+          <p>Git, Figma</p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <section class="showcase" id="project">
+        <div class="showcase__header">
+          <h3>Project</h3>
+        </div>
+
+        <div class="showcase_categories">
+          <section class="category">
+            <div class="category__header">
+              <div class="category__title">
+                <i class="ri-macbook-line"></i>
+                <h4>Websites Development</h4>
+              </div>
+              <div class="category__desc">
+                <p>
+                  Designing and developing eye-catching, fully responsive
+                  portfolio websites.
+                </p>
+                <a href="#"><i class="ri-share-circle-line"></i></a>
+              </div>
+            </div>
+
+            <div class="category__projects">
+              <div class="project-card">
+                <img
+                  src="assets/project-1.png"
+                  alt="Portfolio 1"
+                  class="project-card__image"
+                />
+                <div class="project-card__info">
+                  <h5>Nolan Ecommerce</h5>
+                  <p>2025</p>
+                </div>
+                <p class="project-card__desc">
+                  An eCommerce website for selling clothes with authentication,
+                  card payments, and an admin dashboard. It includes analytics
+                  for tracking sales and user activity. Secure and user-friendly
+                  for both customers and admins.
+                </p>
+                <a
+                  href="https://nolan-commerce-store.onrender.com"
+                  onclick="openProject()"
+                  >View Live Demo</a
+                >
+              </div>
+
+              <div class="project-card">
+                <img
+                  src="assets/project-2.png"
+                  alt="Portfolio 2"
+                  class="project-card__image"
+                />
+                <div class="project-card__info">
+                  <h5>Nolan Netflix</h5>
+                  <p>2025</p>
+                </div>
+                <p class="project-card__desc">
+                  A Netflix clone with authentication, featuring top-rated,
+                  upcoming, and popular movie lists. Includes trailers for a
+                  seamless streaming experience. Designed for a smooth and
+                  engaging user experience.
+                </p>
+                <a
+                  href="https://nolan-netflix.onrender.com/"
+                  onclick="openProject()"
+                  >View Live Demo</a
+                >
+              </div>
+
+              <div class="project-card">
+                <img
+                  src="assets/project-3.png"
+                  alt="Portfolio 3"
+                  class="project-card__image"
+                />
+                <div class="project-card__info">
+                  <h5>Nolan Twitter</h5>
+                  <p>2025</p>
+                </div>
+                <p class="project-card__desc">
+                  A Twitter clone with authentication, allowing users to post,
+                  comment, like, follow others, and edit profiles. Designed for
+                  seamless social interaction. Engaging and user-friendly
+                  experience.
+                </p>
+                <a
+                  href="https://nolan-twitter.onrender.com/"
+                  onclick="openProject()"
+                  >View Live Demo</a
+                >
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="socials">
+          <a target="_blank" href="https://github.com/nghitanlam">Github</a>
+          <a target="_blank" href="https://www.linkedin.com/in/tannghi"
+            >LinkedIn</a
+          >
+        </div>
+      </section>
+
+      <!-- <a class="online" href="#"><i class="fas fa-circle"></i> Available For Job</a> -->
+    </footer>
+
+    <script>
+      let text = document.getElementById("email").innerHTML;
+
+      const copyContent = async () => {
+        try {
+          await navigator.clipboard.writeText(text);
+          alert("Email Copied");
+        } catch (err) {
+          console.error("Failed to copy: ", err);
+        }
+      };
+
+      const openProject = () => {
+        alert(
+          "Since I use the free deployment, when you first enter the site, please wait 1 minute for the server to start."
+        );
+      };
+    </script>
+  </body>
+</html>
